@@ -135,13 +135,13 @@ body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.875rem;
   text-align: center;
-  text-decoration: none;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
 .attribution a {
   font-family: "Big Shoulders Display", cursive;
+  text-decoration: none;
   color: #004241;
 }
 

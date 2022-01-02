@@ -143,12 +143,12 @@ body {
 .attribution {
     font-family: $font-base-400;
     font-size: 0.875rem; //14px / 16px(rem)
-     text-align: center;
-     text-decoration: none;
-     margin-top: 1.25rem;
-     margin-bottom: 1.25rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 .attribution a {
     font-family: $font-base-700;
+    text-decoration: none;
     color: $very-dark-cyan
 }
