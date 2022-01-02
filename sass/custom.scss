@@ -8,12 +8,147 @@ $very-light-gray: hsl(0, 0%, 95%);               //(background, headings, button
 $font-base-400: 'Lexend Deca', sans-serif;
 $font-base-700: 'Big Shoulders Display', cursive;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $very-light-gray;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $very-light-gray;
+}
+
+.tarjeta {
+    margin-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.seccion-tarjeta {
+    width: 20.4375rem;
+    height: 27.625rem;
+    padding: 2.96875rem;
+    
+}
+.sedans{
+    background-color: $bright-orange;
+}
+.suvs {
+    background-color: $dark-cyan;
+}
+.luxury {
+    background-color: $very-dark-cyan;
+}
+
+.flx-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.icono {
+    width: 4rem;
+}
+
+.service {
+    color: $very-light-gray;
+    font-size: 2.5rem;
+    font-family: $font-base-700;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 2.0625rem;
+}
+
+.description {
+    color: $very-light-gray;
+    font-size: 0.9375rem;
+    font-family: $font-base-400;
+    font-weight: 400;
+    color: $transparent-white;
+    line-height: 1.7;
+    padding-top: 1.5625rem;
+}
+
+.btn-more {
+    text-decoration: none;
+    border-radius: 1.5rem;
+    background-color: $very-light-gray;
+    font-size: 0.875rem;
+    font-family: $font-base-400;
+    font-weight: 400;
+    letter-spacing: 0.03125rem;
+    text-align: center;
+    width: 9.25rem;
+    height: 3rem;
+    padding-top: 0.9375rem;
+    margin-top: 1.5625rem;
+    transition: .2s background-color linear;
+}
+.btn-more:hover {
+    color: $very-light-gray;
+    border: 2px solid $very-light-gray;
+}
+
+.btn-naranja {
+    color: $bright-orange;
+}
+.btn-naranja:hover {
+    background-color: $bright-orange;
+}
+.btn-cyan {
+    color: $dark-cyan;
+}
+.btn-cyan:hover {
+    background-color: $dark-cyan;
+}
+.btn-cyan-obscuro {
+    color: $very-dark-cyan;
+}
+.btn-cyan-obscuro:hover {
+    background-color: $very-dark-cyan;
+}
+
+@media (min-width: 992px) {
+        
+    .tarjeta {
+        margin-top: 10.625rem;
+        flex-direction: row;
+    }
+    .seccion-tarjeta {
+        width: 19.15625rem;
+        height: 31.25rem;
+        padding: 2.96875rem;
+    }
+    .btn-more {
+        margin-top: 5.1875rem;
+    }
+
+}
+
+
+
+
+
 
 // Frontend Mentor Styles
 .attribution {
-    font-size: 0.6875rem; //11px
+    font-family: $font-base-400;
+    font-size: 0.875rem; //14px / 16px(rem)
      text-align: center;
+     text-decoration: none;
+     margin-top: 1.25rem;
+     margin-bottom: 1.25rem;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    font-family: $font-base-700;
+    color: $very-dark-cyan
 }

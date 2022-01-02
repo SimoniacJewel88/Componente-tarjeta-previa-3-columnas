@@ -1,10 +1,148 @@
-.attribution {
-  font-size: 0.6875rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.tarjeta {
+  margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.seccion-tarjeta {
+  width: 20.4375rem;
+  height: 27.625rem;
+  padding: 2.96875rem;
+}
+
+.sedans {
+  background-color: #e38826;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+
+.flx-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.icono {
+  width: 4rem;
+}
+
+.service {
+  color: #f2f2f2;
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 2.0625rem;
+}
+
+.description {
+  color: #f2f2f2;
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  padding-top: 1.5625rem;
+}
+
+.btn-more {
+  text-decoration: none;
+  border-radius: 1.5rem;
+  background-color: #f2f2f2;
+  font-size: 0.875rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03125rem;
   text-align: center;
+  width: 9.25rem;
+  height: 3rem;
+  padding-top: 0.9375rem;
+  margin-top: 1.5625rem;
+  transition: 0.2s background-color linear;
+}
+
+.btn-more:hover {
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+.btn-naranja {
+  color: #e38826;
+}
+
+.btn-naranja:hover {
+  background-color: #e38826;
+}
+
+.btn-cyan {
+  color: #006970;
+}
+
+.btn-cyan:hover {
+  background-color: #006970;
+}
+
+.btn-cyan-obscuro {
+  color: #004241;
+}
+
+.btn-cyan-obscuro:hover {
+  background-color: #004241;
+}
+
+@media (min-width: 992px) {
+  .tarjeta {
+    margin-top: 10.625rem;
+    flex-direction: row;
+  }
+
+  .seccion-tarjeta {
+    width: 19.15625rem;
+    height: 31.25rem;
+    padding: 2.96875rem;
+  }
+
+  .btn-more {
+    margin-top: 5.1875rem;
+  }
+}
+.attribution {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .attribution a {
-  color: #3e52a3;
+  font-family: "Big Shoulders Display", cursive;
+  color: #004241;
 }
 
 /*# sourceMappingURL=estilos.css.map */
